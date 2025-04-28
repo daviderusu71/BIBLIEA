@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versetul Zilei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="versetul-zilei.html">Versetul Zilei</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="rugaciuni.html">Rugăciuni</a></li>
+            <li><a href="resurse.html">Resurse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+       
+        <a href="https://adventist.ro/3555/biblia-zilnica-biblia-audio-in-365-de-zile/" target="_blank" ><h1>Versetele Zilie</h1></a>
+        <p id="verset-text"></p>
+        <img src="img/images.jpg" alt="Versetul Zilei">
+    </section>
+    <script>
+        const versete = [
+            "Psalmul 23:1 - Domnul este păstorul meu: nu voi duce lipsă de nimic.",
+            "Filipeni 4:13 - Pot totul în Hristos, care mă întăreşte.",
+            "Ieremia 29:11 - Căci Eu ştiu gândurile pe care le am cu privire la voi, zice Domnul.",
+            "Isaia 41:10 - Nu te teme, căci Eu sunt cu tine!"
+        ];
+        document.getElementById("verset-text").innerText = versete[new Date().getDay() % versete.length];
+    </script>
+</body>
+</html>
